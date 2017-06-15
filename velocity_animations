@@ -1,0 +1,28 @@
+
+
+// ok
+
+'name': 'transition.shrinkIn',
+'example': '{ e: $lineOne, p: 'transition.shrinkIn', o: { duration: 500, delay: 500, stagger: 500} },',
+
+'name': 'transition.expandIn',
+'example':'{ e: $lineTwo, p: 'transition.expandIn', o: { duration: 500, delay: 500, stagger: 500} },'
+
+
+
+// useful
+
+ { e: $lineOne, p: 'transition.expandOut', o: { duration: 4900, delay: 500, stagger: 500} },
+{ e: $lineTwo, p: 'transition.bounceIn', o: { duration: 5000, delay: 0, stagger: 100} },
+{ e: $actTwo, p:{top:"-=350px", left: "-=85px", lineHeight: .7, scale: .5, opacity: .9}, o: { duration: 1000, delay: 1000 } },
+
+{ e: $lineThree, p: 'transition.expandIn', o: { duration: 5500, delay: 50} },
+{ e: $actThree, p:{top:"-=350px", left: "+=85px", lineHeight: .7,  scale: .5, opacity: .9}, o: { duration: 1000, delay: 1000 } },
+
+{ e: $lineFour, p: 'transition.slideUpIn', o: { duration: 5500, delay: 50, stagger:100 }},
+{ e: $actFour, p:{top:"-=350px", left: "+=85px",lineHeight: .7,  scale: .5,  opacity: .9}, o: { duration: 1000, delay: 1000 } },
+
+//my favorites
+
+'name': 'transition.expandIn',
+"{ e: $lineTwo, p: 'transition.expandIn', o: { duration: 5500, delay: 50} },"

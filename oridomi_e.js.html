@@ -1,0 +1,81 @@
+(function() {
+  document.addEventListener('DOMContentLoaded', function() {
+    var demos, logo, methods;
+    if (!OriDomi.isSupported) {
+      document.getElementById('unsupported').style.display = 'block';
+      return;
+    }
+
+demos = [
+new OriDomi('.demo1', {
+        vPanels: 12,
+        ripple: true
+      }),
+new OriDomi('.demo2', {
+    vPanels: 7,
+ // speed: 1600,
+   perspective:     600,
+    ripple: true
+}),
+new OriDomi('.demo3', {
+    hPanels: 4,
+ speed: 1600,
+   // perspective:     600,
+    ripple: true
+}),
+new OriDomi('.demo4', {
+    vPanels: 12,
+ 
+   perspective:     600,
+    ripple: true
+}),
+
+new OriDomi('.demo5', {
+    vPanels: 3,
+  // speed: 1600,
+   // perspective:     600,
+    ripple: true
+}),
+new OriDomi('.demo6', {
+    vPanels: 5,
+ 
+   // perspective:     600,
+    ripple: true
+}),
+new OriDomi('.demo7', {
+    hPanels: 4,
+ speed: 1600,
+   // perspective:     600,
+    ripple: true
+})
+
+
+
+];
+    setTimeout(function() {
+      demos[0].twist(27, 'top');
+      demos[1].stairs(320, 'left').unfold();
+      // demos[2].accordion(-20, 'left').unfold();
+      // demos[3].stairs(18, 'top').unfold();
+      // demos[4].stairs(320, 'bottom').unfold().fold();
+      // demos[5].stairs(20, 'bottom').unfold();
+      // demos[6].stairs(20, 'left').unfold();
+      // return demos[7].reveal(45, 'left').unfold();
+    }, 1000);
+    methods = ['accordion', 'stairs', 'curl', 'reveal', 'foldUp', 'ramp', 'twist', 'fracture'];
+    return document.getElementById('demos').addEventListener('click', function(e) {
+      var angle, el, method, n;
+      if ((el = e.target).className !== 'button') {
+        return;
+      }
+      n = el.getAttribute('data-n');
+      method = methods[Math.abs(Math.floor(Math.random() * methods.length - Math.random()))];
+      angle = Math.floor(Math.random() * 80 * (Math.random() > .5 ? -1 : 1));
+      demos[n][method](method !== 'foldUp' ? angle : void 0);
+      if (method === 'foldUp') {
+        angle = '';
+      }
+      return el.parentNode.getElementsByClassName('label')[0].innerHTML = method + "(" + angle + ")";
+    }, false);
+  });
+}).call(this);

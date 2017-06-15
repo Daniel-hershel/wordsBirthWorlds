@@ -1,0 +1,95 @@
+
+.exampleHolder{
+  border: 5px solid #444;
+  width: 95%;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align:center;
+  font-size: 260%;
+    line-height: 1.2em;
+
+}
+.sceneOne{
+  padding:15px;
+  float:left;
+}
+
+#canvasstage{
+   // background-color: #239B6F;
+}
+.blast{
+  /*opacity:0;*/
+}
+
+#stage{
+   // border: 5px solid #239B6F;
+   max-height: 300px;
+}
+
+.stage{
+     // border: 5px solid #239B6F;
+   max-height: 300px;
+   font-size: 1.8em;
+}
+
+#backstage{
+
+      // border: 5px solid red;
+    // border-style: solid;
+    // border-width: 5px;
+}
+
+.holder{
+  // opacity: 0;
+}
+#thesisTitle{
+
+  opacity:0;
+}
+
+/*by creating classes like this for different tones, I will also be able to use velocity to animate all the different 'tones' collectively no matter where they are using their class
+for the 'afraid I won't be enough' voice
+ what would 'afraid' text look like? using css and js and whatever else. lol. css: */
+.poem{
+font-family: Oswald;
+ font-size: 2em;
+ // opacity: 0;
+
+
+}
+
+
+
+#containerScroller {
+  border: 1px solid gray;
+  height: 300px;
+  overflow-x: hidden;
+  overflow-y: auto;
+   // Remember that a scrolling container element must have a position set. 
+  position: relative;
+  width: 100%;
+}
+
+#sub{
+
+  font-size: 2em;
+}
+.afraid {
+  font-size: .9em;
+  opacity: .7;
+   text-shadow: 1px 1px #D7E1EF;
+}
+
+.idea{
+     margin-left: auto;
+    margin-right: auto;
+    margin-top: 45%;
+    color: #269288;
+    font-size: 1.5em;
+    font-family: bebas;
+    width: 35%l;
+    // float: right;
+}
+//for processing notes to myself
+

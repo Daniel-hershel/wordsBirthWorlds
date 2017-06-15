@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Imagining New Worlds While Existing Inside The Contradictions Of This One</title>
+
+<!-- <link rel="stylesheet" href="materialize.css"> -->
+<!-- <link rel="stylesheet" href="style.css"> -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="textualizer.min.js" type="text/javascript"></script>
+<script src="oridomi.min.js" type="text/javascript"></script>
+
+<!-- <script src="substituteteacher.min.js"></script> -->
+<style>
+body {
+padding: 5%;
+/*padding-top: 0%;*/
+background:#fcfcfc;
+font-size: 16px;
+// background:#D01D24;
+color:#444;
+// width:95%;
+/*font-family: 'Archivo Black', sans-serif;*/
+font-family: Oswald;
+}
+
+a{
+  width: 300px;
+  height:200px;
+  border: 5px solid #444;
+  padding: 25px;
+  color:#D01D24 ;
+font-family: Oswald;
+  
+
+  
+}
+</style>
+</head>
+<body>
+
+
+<a href = "actTwo.html"> Act Two</a>
+<a href = "actOne.html"> Act One</a>
+<a href = "index.html"> Home</a>
+
+
+<div class = "realityHolder">
+<!-- <div class = "paper"> -->
+<!-- <div class="demo demo2"> -->
+  <!-- <section id="demos"> -->
+<!-- 
+<h1>REALITY</h1>
+</div>
+
+<div class = "context">
+There is this way in which reality comes to feel like the bounds of what is possible
+
+</div>
+</div> -->
+
+<!-- <div class = "realityHolder">
+
+<h1> IMAGINE </h1>
+</div>
+   <div class = "context">
+Its hard to imagine anything other then what you've seen. 
+<br>
+How to build a new world with only the pieces of this one?
+   </div> -->
+<div class = "realityHolder">
+<div class = "paper">
+   <div class = "reLanguage">
+Often serves to hold these bounds by limiting how we think about what we think about<br>
+   </div>
+<h1> LANGUAGE </h1>
+
+
+
+      <div class = "reLanguage">
+But language also has the power to reveal truth, confront history, and imagine new worlds into being
+   </div>
+   <div>
+   <p>
+   Can-I Need To
+</p>
+</div>
+         <div class = "reLanguage">
+   
+Mediate the imagining of ne worlds and new possibilities
+   </div>
+        <div class = "reLanguage">
+   
+Be the conduit thorugh which we collectively oversee the transofrmation of the world into a more jsut reality   </div>
+
+   </div>
+   </div>
+
+<script src="libraries/p5.js" type="text/javascript"></script>
+<script src="libraries/p5.dom.js" type="text/javascript"></script>
+<!-- <script src="hollis.js" type="text/javascript"></script> -->
+
+<script src="jquery/jquery.fittext.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/velocity/1.4.3/velocity.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/velocity/1.4.3/velocity.ui.min.js"></script>
+<script src="jquery/jquery.blast.min.js"></script>
+<script src="jquery/jquery.lettering.js"></script>
+<script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
+<script src="jquery/jquery.shuffleLetters.js"></script>
+
+<!-- <script src="sketch.js" type="text/javascript"></script> -->
+
+
+<!-- <script src="slabtext/js/jquery.slabtext.min.js"></script> -->
+<script src="jquery/jquery.slabtext.min.js"></script>
+<!-- <script src="jquery.slabtext.min.js"></script> -->
+
+<script>
+var folded = new OriDomi('.paper', {
+  vPanels:         5,     // number of panels when folding left or right (vertically oriented)
+  hPanels:         3,     // number of panels when folding top or bottom
+  speed:           1200,  // folding duration in ms
+  ripple:          2,     // backwards ripple effect when animating
+  shadingIntesity: .5,    // lessen the shading effect
+  perspective:     800,   // smaller values exaggerate 3D distortion
+  maxAngle:        40,    // keep the user's folds within a range of -40 to 40 degrees
+  shading:         'soft' // change the shading type
+});
+
+
+
+// folded.curl(50).collapse().setSpeed(2000).stairs(-29).foldUp().unfold();
+
+folded.fracture(48);
+
+// folded.ramp(14, function() {
+//   alert('A callback as a second argument...');
+// });
+// //function to have element curl fold on window load
+// folded.curl(-50, 'top', function(event, instance) {
+//   // arguments are the transition event and the OriDomi instance
+//   alert('It seems my folding days are through.');
+// });
+
+$paper = $('.paper')
+
+$paper.click(function(){
+$realityHolder = $('.realityHolder')
+
+ // $context
+ $realityHolder
+.velocity({ border: '0px' },  { loop: 2 });
+
+// .velocity({ opacity:1, fontSize: "10em" }, { loop: 1 });
+  })
+
+// velocity()
+
+</script>
+<script>
+// Function to slabtext the H1 headings
+function slabTextHeadlines() {
+$("h1").slabText({
+// Don't slabtext the headers if the viewport is under 380px
+"viewportBreakpoint":380
+});
+};
+// Load fonts using google font loader
+var WebFontConfig = {
+google: { families: [ 'Open+Sans:400,700:latin', 'Oswald:700:latin' ] },
+// slabText the headers when the font has finished loading (or not)
+fontactive: slabTextHeadlines,
+fontinactive: slabTextHeadlines
+};
+(function() {
+var wf = document.createElement('script');
+wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+wf.type = 'text/javascript';
+wf.async = 'true';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(wf, s);
+})();
+</script>
+
+
+</body>
+</html>
